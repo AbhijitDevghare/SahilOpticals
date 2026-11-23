@@ -3,7 +3,7 @@ import axios from 'axios';
 export const TOKEN_STORAGE_KEY = 'sahil_optical_token';
 export const UNAUTHORIZED_EVENT = 'sahil:unauthorized';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ;
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "https://sahilopticalsbackend.onrender.com/api";
 
 export const getAuthToken = () => {
   try {
