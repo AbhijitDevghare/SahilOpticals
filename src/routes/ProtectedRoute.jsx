@@ -6,6 +6,7 @@ export default function ProtectedRoute({ children }) {
   const { isAuthenticated, isInitializing } = useAuth();
   const location = useLocation();
 
+  
   if (isInitializing) {
     return (
       <div className="min-h-screen bg-slate-50 flex items-center justify-center">
